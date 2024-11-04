@@ -22,7 +22,7 @@ API_HASH = os.environ.get("API_HASH", "")
 CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002243581329"))
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "1029462448,5796857876"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "1029462448"))
 
 #Port
 PORT = os.environ.get("PORT", "8080")
@@ -51,7 +51,7 @@ TUT_VID = os.environ.get("TUT_VID","gojfsi/2")
 START_MSG = os.environ.get("START_MESSAGE", "<b>ʜᴇʟʟᴏ {first}\n\n ɪ ᴀᴍ ᴍᴜʟᴛɪ ғɪʟᴇ sᴛᴏʀᴇ ʙᴏᴛ , ɪ ᴄᴀɴ sᴛᴏʀᴇ ᴘʀɪᴠᴀᴛᴇ ғɪʟᴇs ɪɴ sᴘᴇᴄɪғɪᴇᴅ ᴄʜᴀɴɴᴇʟ ᴀɴᴅ ᴏᴛʜᴇʀ ᴜsᴇʀs ᴄᴀɴ ᴀᴄᴄᴇss ɪᴛ ғʀᴏᴍ sᴘᴇᴄɪᴀʟ ʟɪɴᴋ » @ultroidofficial</b>")
 try:
     ADMINS=[6695586027]
-    for x in (os.environ.get("ADMINS", "1029462448,5796857876").split()):
+    for x in (os.environ.get("ADMINS", "1029462448").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
